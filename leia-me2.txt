@@ -1,0 +1,14 @@
+urenilson@crenilson:~$ ls
+urenilson@crenilson:~$ cd deploy-vps/
+urenilson@crenilson:~/deploy-vps$ ls
+urenilson@crenilson:~/deploy-vps$ echo "# deploy-vps" >> README.md
+urenilson@crenilson:~/deploy-vps$ ls
+README.md
+urenilson@crenilson:~/deploy-vps$ git init
+Repositório vazio Git inicializado em  /home/urenilson/deploy-vps/.git/
+urenilson@crenilson:~/deploy-vps$ git add .
+urenilson@crenilson:~/deploy-vps$ git commit -m "primeiro commit"
+urenilson@crenilson:~/deploy-vps$ git remote add origin git@github.com:FranciscoRenilson/deploy-vps.git
+urenilson@crenilson:~/deploy-vps$ git branch -M main
+urenilson@crenilson:~/deploy-vps$ git push -u origin main
+urenilson@crenilson:~/deploy-vps$ 

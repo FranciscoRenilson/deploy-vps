@@ -1,0 +1,46 @@
+urenilson@crenilson:~$ ls
+'Área de trabalho'   Músicas               TwitterCard
+ carrosel            pack-desktop          V3B4m7We.part
+ contador            pack-desktop-v2       vflet
+ deploy-vps          portifolio-pro        video-imagem
+ Documentos          productcard           Vídeos
+ Downloads           Público               vscode
+ EA-zESqv.part       PycharmProjects       wGnk3l5c.part
+ eclips              resultado-arquivos    workspace
+ FullCycleTube       resultado-diretorio   workspace-arquivos-csv
+ Imagens             snap                  workspace-arquivos-csv-nd
+ InstaProfile        tarefas               workspace-arquivos-csv-tmp
+ Modelos             teste-assembly
+urenilson@crenilson:~$ cd deploy-vps/
+urenilson@crenilson:~/deploy-vps$ ls
+urenilson@crenilson:~/deploy-vps$ echo "# deploy-vps" >> README.md
+urenilson@crenilson:~/deploy-vps$ ls
+README.md
+urenilson@crenilson:~/deploy-vps$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Repositório vazio Git inicializado em  /home/urenilson/deploy-vps/.git/
+urenilson@crenilson:~/deploy-vps$ git add .
+urenilson@crenilson:~/deploy-vps$ git commit -m "primeiro commit"
+[master (root-commit) ed09e37] primeiro commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+urenilson@crenilson:~/deploy-vps$ git remote add origin git@github.com:FranciscoRenilson/deploy-vps.git
+urenilson@crenilson:~/deploy-vps$ git branch -M main
+urenilson@crenilson:~/deploy-vps$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 232 bytes | 232.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:FranciscoRenilson/deploy-vps.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+urenilson@crenilson:~/deploy-vps$ 
